@@ -1,0 +1,170 @@
+<style>
+
+body, html {
+  background-color: #222;
+  height: 100%;
+  margin: 10px 0px 0px 0px;
+  font-family: Arial;
+}
+
+.tablink {
+  background-color: #222;
+  color: white;
+  float: center;
+  border: 3px double #0f0;
+  outline: hidden;
+  cursor: pointer;
+  padding: 14px;
+  font-size: 17px;
+  width: 15%;
+  border-radius: 30%;
+  box-shadow: 10px 10px 10px #000;
+}
+
+.tablink:hover {
+  background-color: #0f0;
+  color: #000;
+  box-shadow: 10px 10px 10px #fff;
+  border: 3px double #fff;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 20px;
+  height: 100%;
+}
+
+</style>
+<div>
+
+<button class="tablink" onclick="openPage('FCK', this, 'red')" id="defaultOpen">FCK</button>
+<button class="tablink" onclick="openPage('FLAPX', this, 'red')">FLAPX</button>
+<button class="tablink" onclick="openPage('INFO', this, 'red')">INFO</button>
+<button class="tablink" onclick="openPage('LDOGE', this, 'red')">LDOGE</button>
+<button class="tablink" onclick="openPage('MTLC', this, 'red')">MTLC</button>
+<button class="tablink" onclick="openPage('SAT3', this, 'red')">SAT3</button>
+<button class="tablink" onclick="openPage('AZZR', this, 'red')">AZZR</button>
+<button class="tablink" onclick="openPage('WAYA', this, 'red')">WAYA</button>
+<button class="tablink" onclick="openPage('SMLY', this, 'red')">SMLY</button>
+<button class="tablink" onclick="openPage('421', this, 'red')">421</button>
+
+<div id="FCK" class="tabcontent">
+   <iframe src="https://fck.urcryptodepot.com" 
+            height="100%" 
+            width="100%" 
+            marginwidth="5" 
+            scrolling="no"
+            box-shadow="10px 10px 10px #000">
+    </iframe> 
+</div>
+
+<div id="FLAPX" class="tabcontent">
+   <iframe src="https://flapx.urcryptodepot.com" 
+            height="100%" 
+            width="100%" 
+            marginwidth="5" 
+            scrolling="no"
+            box-shadow="10px 10px 10px #000">
+    </iframe>
+</div>
+
+<div id="INFO" class="tabcontent">
+   <iframe src="https://info.urcryptodepot.com" 
+            height="100%" 
+            width="100%" 
+            marginwidth="5" 
+            scrolling="no"
+            box-shadow="10px 10px 10px #000">
+    </iframe>
+</div>
+
+<div id="LDOGE" class="tabcontent">
+   <iframe src="https://ldoge.urcryptodepot.com" 
+            height="100%" 
+            width="100%" 
+            marginwidth="5" 
+            scrolling="no"
+            box-shadow="10px 10px 10px #000">
+    </iframe>
+</div>
+
+<div id="MTLC" class="tabcontent">
+   <iframe src="https://mtlc.urcryptodepot.com" 
+            height="100%" 
+            width="100%" 
+            marginwidth="5" 
+            scrolling="no"
+            box-shadow="10px 10px 10px #000">
+    </iframe>
+</div>
+
+<div id="SAT3" class="tabcontent">
+   <iframe src="https://sat3.urcryptodepot.com" 
+            height="100%" 
+            width="100%" 
+            marginwidth="5" 
+            scrolling="no"
+            box-shadow="10px 10px 10px #000">
+    </iframe>
+</div>
+
+<div id="AZZR" class="tabcontent">
+   <iframe src="https://azzr.urcryptodepot.com" 
+            height="100%" 
+            width="100%" 
+            marginwidth="5" 
+            scrolling="no"
+            box-shadow="10px 10px 10px #000">
+    </iframe>
+</div>
+
+<div id="WAYA" class="tabcontent">
+   <iframe src="https://waya.urcryptodepot.com" 
+            height="100%" 
+            width="100%" 
+            marginwidth="5" 
+            scrolling="no"
+            box-shadow="10px 10px 10px #000">
+    </iframe>
+</div>
+
+<div id="SMLY" class="tabcontent">
+   <iframe src="https://smly.urcryptodepot.com" 
+            height="100%" 
+            width="100%" 
+            marginwidth="5" 
+            scrolling="no"
+            box-shadow="10px 10px 10px #000">
+    </iframe>
+</div>
+
+<div id="421" class="tabcontent">
+   <iframe src="https://421.urcryptodepot.com" 
+            height="100%" 
+            width="100%" 
+            marginwidth="5" 
+            scrolling="no"
+            box-shadow="10px 10px 10px #000">
+    </iframe>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</div>
